@@ -317,7 +317,8 @@ describe('Scope', function() {
                     return scope.aValue;
                 }
             );
-
+            // TODO: add breakpoint here see why watchCalls is
+            // [ 'first', 'second', 'first', 'third', 'first', 'third' ]
             scope.$digest();
             expect(watchCalls).toEqual(['first', 'second', 'third', 'first', 'third']);
         });
