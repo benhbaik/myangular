@@ -343,7 +343,7 @@ describe('Scope', function() {
                 function(newValue, oldValue, scope) {
                     scope.counter++;
                 }
-            )
+            );
 
             scope.$digest();
             expect(scope.counter).toBe(1);

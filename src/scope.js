@@ -32,7 +32,7 @@ Scope.prototype.$$digestOnce = function() {
     var newValue, oldValue, dirty;
     _.forEachRight(this.$$watchers, function(watcher) {
         try {
-            if(watcher) {
+            if (watcher) {
                 newValue = watcher.watchFn(self);
                 oldValue = watcher.last;
                 if (!self.$$areEqual(newValue, oldValue, watcher.valueEq)) {
